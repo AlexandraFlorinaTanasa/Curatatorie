@@ -1,0 +1,64 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.jpa.model</groupId>
+  <artifactId>oop.p7.jpa.curatatorie</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>oop.p7.jpa.curatatorie</name>
+  
+  <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        
+        <!-- Added dependecies versions-->
+        <postgresql.jdbc.version>42.2.24</postgresql.jdbc.version>
+        <validation-api.version>2.0.1.Final</validation-api.version>
+		<hibernate-validator.version>6.2.0.Final</hibernate-validator.version>
+		<eclipselink.version.version>2.7.9</eclipselink.version.version>
+		<jakarta.persistence.version>2.2.3</jakarta.persistence.version>
+		<javax.el-api.version>3.0.0</javax.el-api.version>
+		<javax.el.version>2.2.6</javax.el.version>
+    </properties>
+    
+    <dependencies>
+        <!-- Added dependencies to support persistence aspects -->
+        <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+		<dependency>
+		    <groupId>org.postgresql</groupId>
+		    <artifactId>postgresql</artifactId>
+		    <version>${postgresql.jdbc.version}</version>
+		</dependency>
+        
+        <dependency>
+		    <groupId>javax.validation</groupId>
+		    <artifactId>validation-api</artifactId>
+		    <version>${validation-api.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-validator</artifactId>
+		    <version>${hibernate-validator.version}</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.eclipse.persistence</groupId>
+		    <artifactId>eclipselink</artifactId>
+		    <version>${eclipselink.version.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.eclipse.persistence</groupId>
+		    <artifactId>jakarta.persistence</artifactId>
+		    <version>${jakarta.persistence.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>javax.el</groupId>
+		    <artifactId>javax.el-api</artifactId>
+		    <version>${javax.el-api.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.glassfish.web</groupId>
+		    <artifactId>javax.el</artifactId>
+		    <version>${javax.el.version}</version>
+		</dependency>
+    </dependencies>
+</project>
